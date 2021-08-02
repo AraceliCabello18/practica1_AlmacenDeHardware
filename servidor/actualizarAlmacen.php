@@ -22,14 +22,10 @@ session_start();
     $respuesta = mysqli_query($conexion, $sql);
 
     if ($respuesta) {
-        if (unlink($rutaDeArchivo)) {
             $_SESSION['operacion'] = "update";
         } else {
             $_SESSION['operacion'] = "error2";
         }
-    } else {
-        $_SESSION['operacion'] = "error2";
-    }
     
     header("location:../index.php");
     
