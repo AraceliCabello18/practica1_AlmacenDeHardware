@@ -41,6 +41,7 @@
         <form action="actualizar.php" method="POST">
                     <input type="text" hidden name="id_almacen" id="id_almacen" value="<?php echo $mostrar['id_almacen']?>">
                     <button class="btn btn-warning">Editar</button>
+                    </form>
         </td>
         <td>
         <form action="servidor/eliminar.php" method="POST">
